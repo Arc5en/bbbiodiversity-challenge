@@ -19,3 +19,17 @@ At the bottom of the page, there is a bubble chart listing the frequency of the 
 
 II. Explanation of the Data's Code
 
+The index.html file contains the basic structure of the website the dashboard functions on. The only change made here was a reorganization of the order the javascript files would be printed in.
+
+In the samples.json file, there is an array that contains information about the samples. "names" correlates to the sample ID #s, metadata was explained in the demographics table, and "samples" contains information about the otu's identified in each sample. Nothing was altered here.
+
+In the static folder, there are two javascript (js) files. The main bulk of the website's code is found in app.js. It contains multiple functions to create all the individual elements you can see. I assigned quite a few variables to certain sections of the data found in the json file to keep the code in shorthand. 
+
+The bar chart and bubble chart were created using the Plotly.newPlot function, using the data in the json file to create both the layouts and data accepted in the arguments for the newPlot function.
+The metadata table was created with the PANEL function referencing the json file for each sample's metadata.
+At the bottom included the Gauge function used in the other js file mentioned later.
+Finally, the init function allowed for the site to utilize the functions created earlier to construct the charts onto the site. This also include functionality for the dashboard to adapt when a new sample is selected from the dropdown menu.
+
+The second js file in the static folder is the bonus.js, which mainly focused on adaptive properties of the wash gauge. Like the bar chart and bubble chart, we also used the newPlot function to construct it, but the code is more complicated to construct due to having an unconventional structure compared to the biaxial structure of the other two charts. Once that was done, the app.js file could reference this function in its own code and adapt to changes in the sample the dropdown menu is currently focused on.
+
+
