@@ -33,3 +33,8 @@ Finally, the init function allowed for the site to utilize the functions created
 The second js file in the static folder is the bonus.js, which mainly focused on adaptive properties of the wash gauge. Like the bar chart and bubble chart, we also used the newPlot function to construct it, but the code is more complicated to construct due to having an unconventional structure compared to the biaxial structure of the other two charts. Once that was done, the app.js file could reference this function in its own code and adapt to changes in the sample the dropdown menu is currently focused on.
 
 
+III. Future Directions for the Dashboard
+
+Most of my potential changes to the current product would be mostly aesthetic changes. These include cleaning up the table's names for categories to present them more professionally, adding labels to the axes for both the bar chart and the bubble chart, and polishing the heading of the website for a more unique design.
+
+The biggest change I would have liked to incorporate is a brief explanation of how to read the charts for future reference for stakeholders. Even if I was there to explain to them briefly how to read the charts, I feel like it would benefit them more in the long run if they could read the explanation on their own, ideally in a blurb that is right next to (or below) the charts in question. It is also a viable idea to leave them as a scrollable element similar to how the bars when scrolled over reveal more data. 
