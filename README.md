@@ -1,5 +1,7 @@
 # bbbiodiversity-challenge
 
+Link to dashboard website: https://arc5en.github.io/bbbiodiversity-challenge/
+
 As always, I would like to give a shoutout to TA Drew, who always provides his assistance with his speedruns.
 
 In this challenge, I was able to successfuly create a dashboard for the belly button biodiversity of multiple samples using javascript and html. Here I will be explaining the functionality of the dashboard, the code behind the dashboard, and ways I would like to improve on the current design.
