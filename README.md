@@ -6,7 +6,7 @@ As always, I would like to give a shoutout to TA Drew, who always provides his a
 
 In this challenge, I was able to successfuly create a dashboard for the belly button biodiversity of multiple samples using javascript and html. Here I will be explaining the functionality of the dashboard, the code behind the dashboard, and ways I would like to improve on the current design.
 
-I. Dashboard Functionality
+## I. Dashboard Functionality
 
 For each belly button sample (identified by their Test Subject ID Number) which are selectable via a dropdown menu near the upper left corner below the heading, there are four charts that are displayed based on data for that sample.
 
@@ -19,7 +19,7 @@ Directly to the right of the bar chart is a gauge of belly button washing freque
 At the bottom of the page, there is a bubble chart listing the frequency of the cultures identified within the sample. This is an extension of the bar chart in that it lists all of the bacterial cultures identified in the sample including those that were not the top 10 most frequently identified. On the x-axis is the OTU ID # of the sample identified in question, while on the y-axis is the count that they were identified. The center of each bubble is centered around each point based on the coordinates of (OTU ID #, count identified) while the bubbles are sized relative to their frequencies. Higher frequencies indicate bigger bubbles. Scrolling over these bubbles indicate their coordinates as mentioned earlier and their taxonomic information. In the case of overlapping bubbles, the bubble that has a smaller frequency (and thus smaller size) generally tends to have their information displayed at a higher priority than the bubble with a higher frequency (or a bigger size).
 
 
-II. Explanation of the Data's Code
+## II. Explanation of the Data's Code
 
 The index.html file contains the basic structure of the website the dashboard functions on. The only change made here was a reorganization of the order the javascript files would be printed in.
 
@@ -35,7 +35,7 @@ Finally, the init function allowed for the site to utilize the functions created
 The second js file in the static folder is the bonus.js, which mainly focused on adaptive properties of the wash gauge. Like the bar chart and bubble chart, we also used the newPlot function to construct it, but the code is more complicated to construct due to having an unconventional structure compared to the biaxial structure of the other two charts. Once that was done, the app.js file could reference this function in its own code and adapt to changes in the sample the dropdown menu is currently focused on.
 
 
-III. Future Directions for the Dashboard
+## III. Future Directions for the Dashboard
 
 Most of my potential changes to the current product would be mostly aesthetic changes. These include cleaning up the table's names for categories to present them more professionally, adding labels to the axes for both the bar chart and the bubble chart, and polishing the heading of the website for a more unique design.
 
